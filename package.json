@@ -4,13 +4,16 @@
   "description": "Gerenciador de projetos com chat em tempo real para equipes colaborativas",
   "main": "index.js",
   "scripts": {
-    "migrate": "node migrate.js",
+    "migrate": "node backend/migrate.js",
     "create:migration": "node-pg-migrate --migrations-dir migrations create"
   },
   "license": "MIT",
   "dependencies": {
     "dotenv": "^17.2.2",
-    "pg-promise": "^12.1.3"
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg-promise": "^12.1.3",
+    "socket.io": "^4.8.1"
   },
   "devDependencies": {
     "node-pg-migrate": "^8.0.3"

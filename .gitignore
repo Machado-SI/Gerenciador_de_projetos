@@ -1,5 +1,8 @@
 .env
+# Arquivo de configuração do banco de dados
 db.js
 node_modules
+# Pasta das migrations
 migrations
+# Arquivo de conexão das migrations
 migrate.js
